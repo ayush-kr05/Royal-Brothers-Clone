@@ -107,7 +107,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -132,16 +132,34 @@ nav {
   width: 50%;
   justify-content: space-between;
   align-items: center;
+  
+  
 }
 #navMenu > a {
   text-decoration: none;
-  color: #373737;
+  color: rgba(68, 68, 68, 0.687);
   font-weight: bolder;
+  padding: 14px 10px;
+  margin-bottom: -5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #navMenu > a:hover {
-  background-color: #fed250;
-  padding: 5px 10px;
+  background-color: #fed250b9;
+  padding: 14px 10px;
+  overflow: hidden;
+  transition: 2ms;
+  border-radius: 5px;
 }
+#navMenu > :first-child{
+  padding: 0 10px;
+  margin-bottom: -4px;
+}
+#navMenu > :first-child:hover{
+  background-color: #fed250;
+  padding: 2px 10px;
+  margin-bottom: -4px;
+}
+
 
 #navMenu > a > img {
   width: 65px;
@@ -158,15 +176,22 @@ nav {
 #SelectCity > button {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 155px;
-  padding: 9px 10px;
+  padding: 8px 10px;
   border: 3px solid #fed250;
   border-radius: 5px;
   background-color: white;
   color: #373737;
+  
+  
 }
+#SelectCity :hover {
+  background-color: #edb81880;
+}
+
 #SelectCity > button :first-child {
-  color: #fed250;
+  width: 20px;
 }
 #loginSignup > :first-child {
   border: none;
@@ -191,6 +216,19 @@ nav {
 }
 
 /* Contact bar */
+
+.contact-bar{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* position: relative; */
+  height: 30px;
+  font-size: small;
+border-bottom: 0.5px solid rgba(128, 128, 128, 0.151);
+  z-index: 1000;
+  position: fixed;
+}
 
 /* .contact-bar{
     display: flex;
@@ -425,10 +463,13 @@ body {
   z-index: 1;
   left: 50px;
   width: 30%;
+  
 }
 .mySlidesContant h1{
+  margin: 360px 0 0 100px;
+
 
 }
 .mySlidesContant p{
-  
+  margin: 20px 0 0 100px;
 }
