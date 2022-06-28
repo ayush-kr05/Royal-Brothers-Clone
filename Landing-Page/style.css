@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#home-Footer {
+  margin-top: 700px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #373737;
+
+  color: white;
+}
+
+#main-footer {
+  display: grid;
+  /* justify-content: space-around; */
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 0 30px 0;
+  width: 85%;
+  margin: auto;
+}
+
+#main-footer > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#main-footer > div > div img {
+  margin: 10px;
+}
+#main-footer > div > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+#main-footer>div>hr{
+    background-color: #fed250;
+    margin-top: -20px;
+    margin-left: 2px;
+    height: 2px;
+    width: 40px;
+    border: none;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+/* CSS For Subfooter */
+
+#subfooter {
+  background-color: #444;
+  text-align: center;
+}
+#subfooter > h2 {
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+#subfooter > div {
+  width: 90%;
+  padding: 0 5%;
+}
+#subfooter > hr {
+    background-color: #fed250;
+    border: none;
+    width: 50px;
+    border: none;
+    height: 3px;
+    margin-top: -23px;
+  }
+
+.dot {
+  height: 2px;
+  width: 2px;
+  margin: 0 5px;
+}
+
+#tail {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#tail > p > img {
+  width: 20px;
+}
+.socialmedia > img {
+  width: 25px;
+}
+
+/* CSS for NavBar */
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  /* position: fixed; */
+}
+
+#iconMenu {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#iconMenu > img {
+  width: 140px;
+}
+
+#navMenu {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+#navMenu > a {
+  text-decoration: none;
+  color: #373737;
+  font-weight: bolder;
+}
+
+#navMenu > a > img {
+  width: 65px;
+}
+
+#loginSignup {
+  width: 12%;
+}
+
+#SelectCity {
+  width: 10%;
+  height: 40px;
+}
+#SelectCity > button {
+  display: flex;
+  justify-content: space-around;
+  width: 155px;
+  padding: 9px 10px;
+  border: 3px solid #fed250;
+  border-radius: 5px;
+  background-color: white;
+  color: #373737;
+}
+#SelectCity > button :first-child {
+  color: #fed250;
+}
+#loginSignup > :first-child {
+  border: none;
+  padding: 10px 22px;
+  background-color: white;
+  color: #444;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#loginSignup > :first-child:hover {
+  background-color: rgb(202, 198, 198);
+  border-radius: 5px;
+}
+#loginSignup > :last-child {
+  padding: 10px 20px;
+  background-color: #fed250;
+  border-radius: 8px;
+  border: none;
+  color: #444;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Contact bar */
+
+/* .contact-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.contact-bar>div{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+} */
+
+/* CSS for main body */
+
+.top-part {
+  background-image: url(images/top-image.jpg);
+  position: relative;
+  background-position: 60%;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.select-ride {
+  width: 100%;
+  height: 90vh;
+}
+
+#pick-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  height: 50%;
+  justify-content: space-around;
+  padding: 2%;
+  text-align: left;
+}
+#pick-form input{
+  width: 45%;
+  height: 30px;
+}
