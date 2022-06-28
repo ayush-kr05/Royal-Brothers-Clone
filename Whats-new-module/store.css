@@ -66,38 +66,33 @@ color: black;
 /*============== RIDING GEARS SECTION=============== */
 
 #riding-gears{
-
+margin-top: 190px;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-margin-top: 190px;
 }
-#riding-gears div{
- margin-top: 20px;
- /* display: grid;
- grid-template-columns: repeat(4,1fr); */
- display: flex;
+#contents{
+  padding: 90px;
+ display: grid;
  grid-template-columns: repeat(4,1fr);
- gap: 90px;
+ gap: 20px;
+ margin-top: 20px;
 }
-.item-boxs{
-/* width: 600px; */
-display: flex;
-flex-direction: column;
-}
+
 .item-boxs img{
 width: 450px;
-height: 400px;
+height: 450px;
 }
-.item-boxs p{
-  margin-top: -100px;
-}
+
 .item-boxs button{
-margin-top: -50px;
 width: 160px;
 height: 40px;
 background-color: white;
+margin-top: -50px;
+}
+.item-boxs button:hover{
+background-color: rgb(214, 212, 212);
 }
 
 #view_all_btn,span{
