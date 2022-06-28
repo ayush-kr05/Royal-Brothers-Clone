@@ -5,6 +5,12 @@
  }
 
 /*================== Navbar part =================*/
+
+.active{
+    /* background-color: gray; */
+    font-weight: bold;
+}
+
 nav div{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -38,7 +44,9 @@ nav div{
    text-decoration: none;
    padding: 9px;  
   margin: 0px 20px;
-  
+}
+#center ul li :hover{
+   text-decoration: underline;
 }
 #center ul li a{
     text-decoration: none;
