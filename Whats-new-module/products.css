@@ -3,12 +3,7 @@
        .center{
         margin-top: 160px;
     }
-    
-    .active{
-        /* background-color: gray; */
-        font-weight: bold;
-    }
-    
+
  /* ===== Prroducts Section ======  */
     #products{
         display: flex;
@@ -36,9 +31,11 @@
  /* ===== Next Product items Arrow Section ======  */
 
 #next-arrow-section{
-    margin-top: 50px;
+    margin-top: 70px;
 }
-
+.btn{
+    margin: 0px 50px;
+}
 
  /* ===== Footer Section ======  */
  footer{

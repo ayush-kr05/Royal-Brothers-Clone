@@ -1,5 +1,64 @@
 
- 
+  /*================ Utility Class ================*/
+  .center{
+    text-align: center;
+ }
+
+/*================== Navbar part =================*/
+
+.active{
+    /* background-color: gray; */
+    font-weight: bold;
+}
+
+nav div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: black;
+    padding: 10px;
+}
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left img{
+    width: 300px;
+    height: 110px;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+  
+}
+#center ul li{
+   text-decoration: none;
+   padding: 9px;  
+  margin: 0px 20px;
+}
+#center ul li :hover{
+   text-decoration: underline;
+}
+#center ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+#right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
 /*================= header image part  ===============*/
 #head-img img{
@@ -111,18 +170,16 @@ margin: 120px 0px;
 /* ==== Bottom Image Section ======  */
 #bottom-img{
 position: relative;
-/* height:200px; */
+height: 1000px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: yellow;
 }
 #bottom-img img{
 position: absolute;
 top: 0px;
 left: 0px;
-bottom: 0px;
-/* height: 1000px; */
+height: 1000px;
 width: 100vw;
 z-index: -1;
 }
@@ -133,6 +190,60 @@ color: white;
 }
 
 /* ===== Footer Section ===== */
-#home-Footer{
-  /* margin-top: -750px; */
+footer{
+  height: 500px;
+  width: 100vw;
+  background-color: gray;
+  margin-top: -150px;
 }
+#home-Footer {
+    margin-top: 700px;
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #373737;
+  
+    color: white;
+  }
+  
+  #main-footer {
+    display: grid;
+    /* justify-content: space-around; */
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0 30px 0;
+    width: 85%;
+    margin: auto;
+  }
+  
+  #main-footer > div > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #main-footer > div > div img {
+    margin: 10px;
+  }
+  #main-footer > div > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+  }
+  #main-footer>div>hr{
+      background-color: #fed250;
+      margin-top: -20px;
+      margin-left: 2px;
+      height: 2px;
+      width: 40px;
+      border: none;
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: white;
+  }
+  
+  
