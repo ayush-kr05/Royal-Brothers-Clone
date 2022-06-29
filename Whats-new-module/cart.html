@@ -10,14 +10,17 @@
     <title>Cart</title>
     
     <style>
-        .cart-sevtion{
+     
+        .cart-section{
             display: block;
             margin: auto;
+            width: 80%;
         }
         .header{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             align-items: center;
+            /* gap: 40px; */
         }
         .header p{
             font-weight: bold;
@@ -34,9 +37,21 @@
             border: 2px solid black;
             align-items: center;
             margin-top: 20px;
-            gap: 20px;
+            gap: 40px;
         }
 
+        .cart-product_box p{
+            font-size: 33px;
+        }
+        #purchase_btn{
+            font-size: 33px;
+            width: 300px;
+            height: 50px;
+            background-color: crimson;
+            color: white;
+            cursor: pointer;
+
+        }
         .tot_price_n_purchase{
             display: flex;
             justify-content: space-around;
@@ -46,6 +61,7 @@
             font-size: 40px;
             font-weight: bold;
         }
+
     </style>
 </head>
 <body>
@@ -73,7 +89,8 @@
         </div>
     </nav>
     <h1 id="heading" class="center">Products in Cart</h1>
-    <div class="cart-sevtion">
+    <h2 class="center"><a href="store.html">Add more Items</a></h2>
+    <div class="cart-section">
     <div class="header">
         <p>Product</p>
         <p>Product Name</p>
@@ -81,11 +98,6 @@
         <p>Price</p>
     </div>
     <div id="contents">
-
-    </div>
-    <div>
-        <p id="total_price"></p>
-
     </div>
 </div>
 

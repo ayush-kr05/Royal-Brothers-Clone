@@ -94,7 +94,8 @@ let product_incart=JSON.parse(localStorage.getItem("cart")) || [];
         image_url:ele.image_url,
         name:ele.name,
         price:ele.price,
-        id:arry.length
+        id:arry.length,
+        purchase_flg:false
       }
       arry.push(prod_obj);
     })
@@ -133,4 +134,5 @@ function addto_cart(arry,product_id){
   
   product_incart.push(cart_products[0]);
   localStorage.setItem("cart",JSON.stringify(product_incart));
+  localStorage.setItem("purchase",JSON.stringify(product_incart));
 }

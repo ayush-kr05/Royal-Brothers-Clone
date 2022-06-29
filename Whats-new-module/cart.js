@@ -26,6 +26,7 @@ function make_data_todisplay(){
   localStorage.setItem("cart",JSON.stringify(arry));
 }
 */
+
 function display_cart(arry){
     let heading=document.getElementById("heading");
     if(!arry){
@@ -41,7 +42,7 @@ function display_cart(arry){
     name.innerText=ele.name;
     let price_p=document.createElement("p");
     price_p.setAttribute("id","price_p")
-    price_p.innerText=ele.price;
+    price_p.innerText="Rs. "+ele.price;
     let quantity_div = document.createElement("div");
     quantity_div.setAttribute("class","quantity_div")
     let increase = document.createElement("button");
@@ -57,11 +58,10 @@ function display_cart(arry){
     });
   }
 }
-document.getElementById("tot_price").innerText="Total Price : "+ count_tot_price();
-document.getElementById("purchase_btn").addEventListener("click",add_to_purchase);
+document.getElementById("tot_price").innerText="Total Price : Rs."+ count_tot_price();
+
 
 function count_tot_price(){   
-
     let out= products.reduce(function(acc,cur){
     let pr=parseInt(cur.price);
      return acc+pr;
@@ -69,8 +69,15 @@ function count_tot_price(){
    return out;
  }
 
-
-    function add_to_purchase(){
-        console.log("now make purchase");
+/*
+    function add_to_purchase(id){
+      let purch_arry =[{}]
+      purch_arry =products.filter((ele)=>{
+          return id=ele.id;
+        })
+        
+        product_purchase.push(purch_arry[0]);
+        console.log(product_purchase)
+        localStorage.setItem("purchase",JSON.stringify(product_purchase));
     }
- 
+ */
