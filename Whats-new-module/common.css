@@ -55,11 +55,30 @@ nav div{
 }
 #right{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
+  
 }
+#right a{
+  margin: 0px 10px;
+}
+#cart-icon{
+  position: relative;
+ 
+}
+#cart_count{    
+  position: absolute;
+  top: -190px;
+  right: -20px;                 
+  background-color: white;
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+  width: 6px;
+  height: 6px;
+  border-radius: 40px;
 
+}
 
 /* ==================== Footer CSS ===================== */
 

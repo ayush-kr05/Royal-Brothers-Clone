@@ -56,7 +56,7 @@ function display_cart(arry){
     box.append(img,name,quantity_div,price_p)
      contents.append(box);
     });
-  }
+}
 }
 document.getElementById("tot_price").innerText="Total Price : Rs."+ count_tot_price();
 
@@ -68,6 +68,8 @@ function count_tot_price(){
    },0); 
    return out;
  }
+
+
 
 /*
     function add_to_purchase(id){

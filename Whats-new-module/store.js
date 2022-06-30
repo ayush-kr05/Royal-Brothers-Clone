@@ -136,3 +136,9 @@ function addto_cart(arry,product_id){
   localStorage.setItem("cart",JSON.stringify(product_incart));
   localStorage.setItem("purchase",JSON.stringify(product_incart));
 }
+if(product_incart.length>=1){
+let cart_count=document.getElementById("cart_count");
+cart_count.innerText=product_incart.length;
+localStorage.setItem("cart_count",product_incart.length);
+}
+

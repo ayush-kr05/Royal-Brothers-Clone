@@ -21,18 +21,19 @@
             <div id="center">
                 <ul>
                     <li><a class="active" href="products.html">Products</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="bike_rental.html">Bike Rental</a></li>
+                    <li><a  href="about_us.html">About Us</a></li>
+                    <li><a href="../Landing-Page/index.html">Bike Rental</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
             <div id="right">
                 <a href=""><i class="fa fa-search" style="font-size:48px;color:black"></i></a>
                 <a href="home.html"><i class="fa fa-user-circle-o" style="font-size:48px;color:black"></i></a>
-                 <a href="cart.html"><i class="fa fa-briefcase" style="font-size:48px;color:black"></i></a>
-               
-            </div>
-            
+                <a id="cart-icon" href="cart.html"><i class="fa fa-briefcase" style="font-size:48px;color:black"></i>
+                    <!-- Itemsin Cart will show here -->
+                    <span id="cart-count">   </span>
+              </a> 
+            </div> 
         </div>
     </nav>
 
@@ -206,5 +207,13 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+
+let products=JSON.parse(localStorage.getItem("cart"));
+let cart_count=document.getElementById("cart-count");
+console.log(products.length)
+cart_count.innerText=products.length;
+
+</script>
 </body>
 </html>
