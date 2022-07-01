@@ -1,0 +1,133 @@
+
+ /*================ Utility Class ================*/
+ .center{
+    text-align: center;
+ }
+
+/*================== Navbar CSS =================*/
+
+.active{
+    /* background-color: gray; */
+    font-weight: bold;
+}
+
+nav div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: black;
+    padding: 10px;
+}
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left img{
+    width: 300px;
+    height: 110px;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+  
+}
+#center ul li{
+   text-decoration: none;
+   padding: 9px;  
+  margin: 0px 20px;
+}
+#center ul li :hover{
+   text-decoration: underline;
+}
+#center ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+#right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+#right a{
+  margin: 0px 10px;
+}
+#cart-icon{
+  position: relative;
+ 
+}
+#cart_count{    
+  position: absolute;
+  top: -190px;
+  right: -20px;                 
+  background-color: white;
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+  width: 6px;
+  height: 6px;
+  border-radius: 40px;
+
+}
+
+/* ==================== Footer CSS ===================== */
+
+#home-Footer {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: #373737;
+    color: white;
+  }
+  
+  #main-footer {
+    display: grid;
+    /* justify-content: space-around; */
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0 30px 0;
+    width: 85%;
+    margin: auto;
+  }
+  
+  #main-footer > div > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #main-footer > div > div img {
+    margin: 10px;
+  }
+  #main-footer > div > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+  }
+  #main-footer>div>hr{
+      background-color: #fed250;
+      margin-top: -20px;
+      margin-left: 2px;
+      height: 2px;
+      width: 40px;
+      border: none;
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: white;
+  }
+  
+  

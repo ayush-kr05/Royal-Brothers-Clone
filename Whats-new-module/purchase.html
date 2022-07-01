@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <title>Buy-Confirmation</title>
+
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 2fr 1.5fr;
+        }
+
+        /* ===============  Left Side CSS ==========  */
+        #left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+        }
+
+        input {
+            width: 500px;
+            height: 60px;
+        }
+
+        .next-prev-links {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 90px;
+        }
+
+        .next-prev-links a {
+            font-size: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #cont_shp_btn {
+            width: 300px;
+            height: 57px;
+            background-color: crimson;
+            color: white;
+            cursor: pointer;
+            font-size: 30px;
+            border-radius: 9px;
+        }
+
+
+        /* ===============  Right Side CSS ==========  */
+        #right {
+            background-color: rgb(250, 248, 248);
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 70px 50px;
+        }
+
+        #tbody tr td {
+            padding: 20px;
+        }
+
+        #tbody img {
+            width: 120px;
+            height: 120px;
+        }
+
+        #totals {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="left">
+            <a href="store.html">
+                <img src="https://cdn.shopify.com/s/files/1/0571/9906/7323/files/RBStoreLogo_180x.png?v=1635942658"
+                    alt="Logo loading">
+            </a>
+            <div class="step" data-step="contact_information" data-last-step="false">
+                <form data-customer-information-form="true">
+
+                    <div class=" section-contact-information">
+                        <h2 class="Contact-information-h2">
+                            Contact information
+                        </h2>
+
+                        <p class="layout-flex__item">
+                            Already have an account?
+                            <a href="https://store.royalbrothers.com/account/login?checkout_url=https%3A%2F%2Fstore.royalbrothers.com%2F57199067323%2Fcheckouts%2F9bdcb0c4f1e5f9712cd36104f980c2fd%3Fkey%3Da41dfb46dfe0745fbcc57fa56dca2903%26step%3Dcontact_information">
+                                Log in</a>       
+                        </p>
+
+                        <div data-email-or-phone-input-wrapper="true">
+                            <input value="" placeholder="Email or mobile phone number" />
+                        </div>
+                    </div>
+                    <div class=" section-shipping-address" data-shipping-address>
+                        <h2 class="section__title" >
+                            Shipping address
+                        </h2>
+
+                        <div class="country" >
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select country</option>
+                                <option value="1">India</option>
+                                <option value="2">America</option>
+                                <option value="3">Japan</option>
+                              </select>
+                        </div>
+
+                        <div class="field--half" data-address-field="first_name">
+                            <input placeholder="First name" autocomplete="shipping given-name" />
+                        </div>
+
+                        <div class="field--half" data-address-field="last_name">
+                            <input placeholder="Last name" autocomplete="shipping family-name" />
+                        </div>
+
+                        <div class="field__input-wrapper">
+                            <input placeholder="Address">
+                        </div>
+
+                        <div class="city">
+                            <input placeholder="City" />
+                        </div>
+
+                        <div class="city">
+                            <input placeholder="Phone" autocomplete="shipping tel">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="next-prev-links">
+                <a href="cart.html"><i class="bi bi-caret-left"></i> Return to Cart</a>
+                <a href="../Payment-page/paymentGateway.html"><button id="cont_shp_btn">Contnue to Shoping</button></a>
+            </div>
+        </div>
+
+        <!-- =================Right Section ============== -->
+        <div id="right">
+            <div id="contents">
+                <table>
+                    <tbody id="tbody">
+                        <!-- Items will load here  -->
+                    </tbody>
+                </table>
+                <div id="totals">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="purchase.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+
+</head>
+<body>
+    <nav>
+        <div>
+            <div id="left">
+                <a href="store.html">
+                    <img src="https://cdn.shopify.com/s/files/1/0571/9906/7323/files/RBStoreLogo_180x.png?v=1635942658" alt="Logo loading">
+                 </a>
+            </div>
+            <div id="center">
+                <ul>
+                    <li><a  href="products.html">Products</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="bike_rental.html">Bike Rental</a></li>
+                    <li><a  href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <a href=""><i class="fa fa-search" style="font-size:48px;color:black"></i></a>
+                <a href="home.html"><i class="fa fa-user-circle-o" style="font-size:48px;color:black"></i></a>
+                <a id="cart_icon" href="cart.html"><i class="fa fa-briefcase" style="font-size:48px;color:black"></i>
+                    <!-- Itemsin Cart will show here -->
+                    <span id="cart-count">   </span>
+              </a>
+            </div>
+        </div>
+    </nav>
+    <h1 id="heading" class="center">Products in Cart</h1>
+    <h2 class="center"><a href="store.html">Add more Items</a></h2>
+    <div class="cart-section">
+    <div class="header">
+        <p>Product</p>
+        <p>Product Name</p>
+        <p>Quantity</p>
+        <p>Price</p>
+    </div>
+    <div id="contents">
+    </div>
+</div>
+
+<div class="tot_price_n_purchase">
+    <p id="tot_price"></p>
+    <a href="purchase.html"><button id="purchase_btn">Checkout</button></a>
+</div>
+<script src="cart.js"></script>
+</body>
+</html>

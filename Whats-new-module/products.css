@@ -1,0 +1,43 @@
+
+/* === Navbar CSS === */
+       .center{
+        margin-top: 160px;
+    }
+
+ /* ===== Prroducts Section ======  */
+    #products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contents{
+        /* width: 1300px; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+    .p-box{
+        /* background-color: brown; */
+    }
+    .p-box img{
+        width: 550px;
+        height: 550px;
+    }
+    .p-box p:nth-child(3){
+       margin-top: -13px;
+    }
+
+ /* ===== Next Product items Arrow Section ======  */
+
+#next-arrow-section{
+    margin-top: 70px;
+}
+.btn{
+    margin: 0px 50px;
+}
+
+ /* ===== Footer Section ======  */
+ footer{
+    margin: 0px;
+ }
