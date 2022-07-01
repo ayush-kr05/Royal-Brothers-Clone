@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="gateway.css">
+    <style>
+        section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.508);
+        height: 98vh;
+        }
+        h1{
+            margin-bottom: 50px;
+            font-size: 50px;
+            color: rgb(51, 51, 2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            width: 35%;
+            margin-top: 20vh;
+            padding: 15px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #b1acac;
+            font-size: 15px;
+            background-color: #e5e1e1;
+        }
+
+        label {
+            margin: 20px 0 5px 0;
+            font-size: 20px;
+            background-color: #fff;
+        }
+
+        form p {
+            text-align: center;
+            font-size: small;
+            margin: 20px 0;
+            background-color: #fff;
+            
+        }
+
+        input[type="submit"] {
+            margin: 25px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgba(44, 52, 2, 0.808);
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Royal Brothers Payment Gateway</h1>
+        <form>
+            <label for="">Enter OTP</label>
+            <input type="number" id="payOtp" placeholder="Enter 6 digit otp" required="required" value="">
+
+            <input type="submit" value="Make Payment">
+        </form>
+    </section>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit", makePayment);
+
+    function makePayment(event) {
+    event.preventDefault();
+    var payOtp = document.getElementById("payOtp").value;
+
+    if (payOtp === "123456") {
+        alert("Payment Successful");
+        
+        setTimeout(function () {
+        window.open("../Home-Page/index.html", "_self");
+        }, 60);
+        localStorage.setItem("makePayment", 0);
+        var myProduct = [];
+        localStorage.setItem("addToCart", JSON.stringify(myProduct));
+        } else {
+            alert("Enter Valid Otp");
+        }
+    }
+
+
+
+</script>
+</html>
