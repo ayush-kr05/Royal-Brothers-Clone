@@ -88,9 +88,6 @@
     </section>
 </body>
 <script>
-    document.getElementById("makePay").value = `Pay ${localStorage.getItem("makePayment")}`;
-
-
 
     document.querySelector("form").addEventListener("submit", makePayment);
 
@@ -106,6 +103,11 @@
         } else {
             alert("Please fill correct data")
         }
+    }
+    if(localStorage.getItem("payment-method")=="Bike-payment"){
+    document.getElementById("makePay").value = `Pay ${localStorage.getItem("bike_payment_price")}`;
+    }else{
+        document.getElementById("makePay").value = `Pay ${localStorage.getItem("product_total")}`;
     }
 
 

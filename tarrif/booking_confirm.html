@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tariff.css">
+    <title>confirm-page</title>
+    <style>
+        * {
+            font-family: Muli, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main-container {
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            width: 600px;
+            display: block;
+            margin: auto;
+            margin-bottom: 90px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+         .img{
+           display: block;
+           margin: auto;
+           height:100px ;
+         margin-top: 70px;
+         margin-bottom: 50px;
+        }
+        .available,
+        .place {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.274);
+        }
+        .book-button {
+            padding: 20px;
+            width: 100%;
+            background-color: #FED250;
+            margin-top: 50px;
+            border: 0px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        .tarrif-page-container {
+            display: grid;
+            gap: auto;
+            /* margin: auto; */
+            width: 70%;
+            align-items: center;
+        }
+        .bike-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            align-items: center;
+        }
+        #price {
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            width: 400px;
+            height: 30px;
+          font-size: 50px;
+          font-weight: bold;
+            margin-bottom: 40px;
+            /* padding: 15px; */
+            padding: 15px;
+        }
+        .booking {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 5px;
+            font-size: 12.96px;
+            color: #000000DE;
+        }
+    </style>
+</head>
+<body>
+    <a href="../Landing-Page/index.html">
+    <img class="img" src="https://cdn.shopify.com/s/files/1/0571/9906/7323/files/RBStoreLogo_180x.png?v=1635942658" alt="Logo loading"></a>
+  <div class="main-container">
+ 
+    <div class="tarrif-page-container">
+        <div >
+            <h3 id="bike_name" class="title">
+                
+            </h3>
+            <img id="bike-image" class="bike-image"
+                src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819"
+                alt="img">
+            <div>
+                <div id="available"  class="available">
+                    <p id="available">Available at</p>
+                </div>
+            </div>
+            <div class="place">
+                <p>Vishalpur (Nehru Bridge Corner)</p>
+            </div>
+
+            <p id="price"></p>
+            <div>
+               <a href="../Payment-page/paymentGateway.html">
+                <button class="book-button">CONFIRM-BOOKING</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <footer id="home-Footer">
+    <div id="main-footer">
+         <div>
+             <h5>ROYAL BROTHERS</h5>
+             <hr>
+             <div>
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-mail-f7a800f328eab451231c558115ad0067bdd6c5ba04b7acd19f22ae4036e702d1.png" alt="phone icon">
+             <p>support@royalbrothers.com</p>
+             </div>
+             <div>
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-phone-d7daea12563d63fb4bd1cbb2fa0a824d19501def56934aff125e23343912895e.png" alt="phone icon">
+                 <p>+917795687594/+919019595595</p>
+             </div> 
+         </div>
+         <div>
+             <h5>COMPANY</h5>
+             <hr>
+             <a href="">About Us</a>
+             <a href="">Blog</a>
+             <a href="">Careers</a>
+             <a href="">Contact Us</a>
+
+         </div>
+         <div>
+             <h5>POLICIES</h5>
+             <hr>
+             <a>Privacy Policy</a>
+             <a>Terms & Conditions</a>
+         </div>
+         <div>
+             <h5>QUICK LINKS</h5>
+             <hr>
+             <a href="">Tariff</a>
+             <a href="">Own a franchise</a>
+             <a href="">Earn with us</a>
+             <a href="">Indian bike routes</a>
+         </div>
+   
+         <div>
+             <h5>FOLLOW US</h5>
+             <hr>
+             <div class="socialmedia">
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Insta-e068316ffc568b3c0162ef129542c4ec473fedb2317cc8132168a07a0616b475.png" alt="insta logo">
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Facebook-ad24f92a1479ca4c5b308092f11f91d3ad2189d505ba2a737f376943a89b721b.png" alt="FB Logo">
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Linkedin-685bfa4464dc2263601740aad98014e02801299c7f2104be70458ac13d061fa1.png" alt="Linkedn Logo">
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Youtube-35dbc9202b8e7b71d09c782934215b9f6a78a1b3b11d190b5ad275c004484295.png" alt="">
+             </div>    
+         </div>
+         <div class="followUs">
+             <h5>DOWNLOAD OUR APP</h5>
+             <hr>
+             <div>
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png" alt="App Store">
+                 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/play_store-057f9061b4cd0fd4953a485569c15e63fdf8d89b0bcc025c04cfb34d9e8cd571.png" alt="Play Store">
+             </div>    
+         </div> 
+   </div>   <!--  end of main footer -->
+ </footer>
+
+ <script>
+    let data=JSON.parse(localStorage.getItem("bike_booking_confirm"));
+  let img=  document.getElementById("bike-image");
+  img.setAttribute("src",data.image_url)
+  
+    document.getElementById("bike_name").innerText=data.name;
+    document.getElementById("available").innerText="Available :"+data.availble;
+    document.getElementById("price").innerText="Rs. "+data.row1_price;
+
+    document.querySelector(".book-button").addEventListener("click",function (){
+        add_to_payment();
+
+    })
+
+    function add_to_payment(){
+        localStorage.setItem("bike_payment_price",data.row1_price);
+        localStorage.setItem("payment-method","Bike-payment");
+
+        console.log(localStorage.bike_payment_price)
+    }
+
+ </script>
+</body>
+</html>

@@ -2,6 +2,11 @@
 
 let products=JSON.parse(localStorage.getItem("cart"));
 
+let btn = document.getElementById("cont_shp_btn");
+btn.addEventListener("click",function(){
+  add_to_payment();
+})
+// let out=0;
 display_data();
 
 function display_data(){
@@ -36,11 +41,14 @@ function display_data(){
     totals.append(total_text,total_price);
     
 }
-
 function count_tot_price(){   
     let out= products.reduce(function(acc,cur){
     let pr=parseInt(cur.price);
      return acc+pr;
    },0); 
    return out;
+ }
+ function add_to_payment(){
+    localStorage.setItem("product_total",count_tot_price());
+    localStorage.setItem("payment-method","product-payment");
  }

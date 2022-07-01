@@ -36,11 +36,11 @@ let availble_bikes=[
       },
       {
         image_url:
-        "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566",
-        name:"Honda Activa 5G",
+        "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/030/medium/Aprilia-SR-150__...png?1504092295",
+        name:"Aprilia SR 150 (ABS)",
         row1_price: 650,
         row2_price: 750,
-        available:"Daily",
+        availble:"Daily",
         excess_km: 4.0,
         km_limit :120.0,
         id:5
@@ -48,11 +48,11 @@ let availble_bikes=[
     },
     {
         image_url:
-        "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/257/medium/ntorq2.png?1571407789",
-        name:"TVS Ntorq 125",
+        "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
+        name:"Honda Dio",
         row1_price: 650,
         row2_price: 750,
-        available:"Daily",
+        availble:"Daily",
         excess_km: 4.0,
         km_limit :120.0,
         id:6
@@ -60,11 +60,11 @@ let availble_bikes=[
     },
     {
         image_url:
-        "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/016/medium/Bajaj_Pulsar-min_2.png?1519738545",
-        name:"Bajaj Pulsar 150",
+        "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/121/medium/Activa_48-min_2.png?1592300804",
+        name:"Honda Activa 4G",
         row1_price: 650,
         row2_price: 750,
-        available:"Daily",
+        availble:"Daily",
         excess_km: 4.0,
         km_limit :120.0,
         id:7
@@ -76,7 +76,7 @@ let availble_bikes=[
         name:"Yamaha FZ",
         row1_price: 650,
         row2_price: 750,
-        available:"Daily",
+        availble:"Daily",
         excess_km: 4.0,
         km_limit: 120.0,
         id:8
@@ -88,7 +88,7 @@ let availble_bikes=[
         name:"Hero Glamour",
         row1_price: 650,
         row2_price: 750,
-        available:"Daily",
+        availble:"Daily",
         excess_km: 4.0,
         km_limit: 120.0,
         id:9
@@ -98,13 +98,12 @@ let availble_bikes=[
         image_url:
         "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/014/medium/Himalayan_RE-min_2.png?1519739226",
         name:"Royal Enfield Himalayan",
-        row1_price: 650,
-        row2_price: 750,
-        available:"Daily",
+        row1_price: 1650,
+        row2_price: 1750,
+        availble:"Daily",
         excess_km: 4.0,
-        km_limit: 120.0,
+        km_limit: 320.0,
         id:10
-    
     },
    
 ];
@@ -118,17 +117,19 @@ let bike_incart=JSON.parse(localStorage.getItem("cart")) || [];
       let prod_obj={
         image_url:ele.image_url,
         name:ele.name,
-        price:ele.price,
+        row1_price: ele.row1_price,
+        row2_price: ele.row2_price,
+        availble:ele.availble,
+        excess_km: ele.excess_km,
+        km_limit: ele.km_limit,
         id:arry.length,
-        purchase_flg:false
       }
       arry.push(prod_obj);
     })
-    display_products(availble_bikes);
+    display_products(arry);
   }
 
   function display_products(data){
-
     data.map(function (ele){
     let contents=document.getElementById("container");
 
@@ -200,35 +201,40 @@ let bike_incart=JSON.parse(localStorage.getItem("cart")) || [];
     let excess_chrges_value = document.createElement("div");
     excess_chrges_value.setAttribute("class","excess_chrges")
     let excess_km_price = document.createElement("p");
-    excess_km_price.innerText = "Rs. "+ele.excess_km;
+    excess_km_price.innerText = "Rs. "+ele.excess_km+"/km";
     let km_limit_value = document.createElement("p");
     km_limit_value.innerText = ele.km_limit+"/day";
     excess_chrges_value.append(excess_km_price,km_limit_value);
     row3_day_n_price_div.append(excess_chrges_keys,excess_chrges_value);
 
-    let btn=document.createElement("button");
+       let btn=document.createElement("button");
      btn.setAttribute("id","Book_btn");
     btn.innerText="BOOK NOW";
+    let link_next = document.createElement("a");
+    link_next.setAttribute("href","booking_confirm.html");
+    link_next.append(btn);
     btn.addEventListener("click",function (){
-      addto_cart(data,ele.id);
+      btn.setAttribute("href","booking_confirm.html")
+      addto_conform_page(data,ele.id);
     })
   
       price_details.append(row1_days,row1_day_n_price_div,row2_days,row2_day_n_price_div,row3_heading,row3_day_n_price_div);
-     box.append(name,img,availbilty_p,price_details,btn);
+     box.append(name,img,availbilty_p,price_details,link_next);
      contents.append(box);
   });
 }
 
-function addto_cart(arry,product_id){
-  console.log("Add to payment ")
-  // cart_products=[{}];
-  //  cart_products=arry.filter((ele)=>{
-  //   return  ele.id == product_id ;
-  // });
+function addto_conform_page(arry,product_id){
+
+   cart_products=[{}];
+    cart_products=arry.filter((ele)=>{
+   return  ele.id == product_id ;
+   });
   
-  // bike_incart.push(cart_products[0]);
-  // localStorage.setItem("cart",JSON.stringify(bike_incart));
-  // localStorage.setItem("purchase",JSON.stringify(bike_incart));
+   bike_incart.push(cart_products[0]);
+   localStorage.setItem("bike_booking_confirm",JSON.stringify(cart_products[0]));
+    console.log(localStorage.bike_booking_confirm)
+  //  localStorage.setItem("purchase",JSON.stringify(cart_products[0]));
 }
 
 
