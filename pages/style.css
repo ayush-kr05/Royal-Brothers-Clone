@@ -489,6 +489,7 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+  position: fixed;
   background-color: rgba(63, 65, 66, 0.587);
 }
 
@@ -497,7 +498,7 @@ body {
   height: 100vh;
   overflow-y: auto;
   width: 20rem;
-  position: absolute;
+  position: fixed;
   z-index: 500;
   transition: left 400ms;
   left: -21rem;
