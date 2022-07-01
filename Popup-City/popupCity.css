@@ -246,19 +246,41 @@ Css for navbar completed */
     width: 200px;
     height: 200px;
     /* background-color: crimson; */
+    transition: transform .4s;
     border-radius: 20px;
     overflow: hidden;
 }
 .cityNames>img{
   width: 100%;
- 
+  height: 100%;
+}
+
+.cityNames:hover{
+  transform: scale(1.1);
 }
 
 .CityConatainer{
     background-color: rgba(68, 68, 68, 0.198);
     padding: 20px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    overflow: scroll;
+    border-radius: 20px;
     overflow-x: hidden;
-    height: 80vh;
-    
+    height: 80vh;   
+}
+
+.CityConatainer::-webkit-scrollbar {
+  display: none;
+}
+
+.ddd{
+  height: 1000px;
+  
+}
+
+.cityNames p{
+  margin-top: -36px;
+  color: white;
+  font-size: 21px;
+  text-align: center;
 }
