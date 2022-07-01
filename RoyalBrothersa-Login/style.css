@@ -1,0 +1,83 @@
+body{
+    align-items: center;
+    background-color: rgba(180, 226, 243, 0.424);
+}
+div{
+    display: flex;
+    justify-content: center;
+    
+    height: 80vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(244, 242, 243); */
+    padding: 10px 50px 10px 30px;
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    background-color: white;
+  
+}
+h1{
+    text-align: center;
+}
+label{
+    font-size: 17px;
+    color: rgb(51, 46, 46);
+    margin: 10px 0 5px 0;
+}
+input{
+    padding: 10px;
+    border-radius: 7px;
+    margin: 5px 0 10px 0;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+}
+p{
+    text-align: center;
+}
+body>img{
+    width: 120px;
+    display: block;
+    margin: auto;
+}
+button{
+    display: flex;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+button>span{
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+button>img{
+    width: 30px;
+   
+}
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+input[type="submit"]{
+    border: none;
+    background-color: rgba(194, 190, 190, 0.439);
+}
+
+a{
+    color: blue;
+    font-weight: bold;
+}
+.terms a{
+    font-weight: lighter;
+}
+
