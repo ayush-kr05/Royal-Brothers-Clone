@@ -12,3 +12,13 @@ overlay.addEventListener("click", function () {
   drawer.style.left = "-20rem";
   overlay.style.display = "none";
 });
+
+
+// Code For Login Signup
+
+let log_btn_section=document.getElementById("loginSignup");
+  if(localStorage.getItem("login")=="true"){
+    log_btn_section.style.display="none";
+  }else{
+    log_btn_section.style.display="block";
+  }

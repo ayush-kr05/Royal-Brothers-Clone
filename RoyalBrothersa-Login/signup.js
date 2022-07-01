@@ -13,4 +13,6 @@ function submitDetails(){
     data.push(obj);
     
     localStorage.setItem("userDetails",JSON.stringify(data));
+    alert("SignUp Successfull");
+    window.open("SignIn.html", "_self");
 }

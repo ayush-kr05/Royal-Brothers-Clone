@@ -17,7 +17,9 @@ function getDetails(event){
     }
 
     if(isExsist==true){
-        alert("Welcome To Masai");
+        localStorage.setItem("login",true);
+        alert("Welcome To Royal Brothers");
+        window.open("../pages/Ahmedabad.html", "_self");
     }else{
         alert("Wrong Credentials");
     }
