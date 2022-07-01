@@ -233,7 +233,7 @@ function addto_conform_page(arry,product_id){
   
    bike_incart.push(cart_products[0]);
    localStorage.setItem("bike_booking_confirm",JSON.stringify(cart_products[0]));
-    console.log(localStorage.bike_booking_confirm)
+    // console.log(localStorage.bike_booking_confirm)
   //  localStorage.setItem("purchase",JSON.stringify(cart_products[0]));
 }
 
