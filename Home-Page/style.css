@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  #home-Footer {
+    /* margin-top: 700px; */
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #373737;
+  
+    color: white;
+  }
+  
+  #main-footer {
+    display: grid;
+    /* justify-content: space-around; */
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0 30px 0;
+    width: 85%;
+    margin: auto;
+  }
+  
+  #main-footer > div > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #main-footer > div > div img {
+    margin: 10px;
+  }
+  #main-footer > div > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+  }
+  #main-footer > div > hr {
+    background-color: #fed250;
+    margin-top: -20px;
+    margin-left: 2px;
+    height: 2px;
+    width: 40px;
+    border: none;
+  }
+  
+  .dotFoot {
+    width: 7px;
+    height: 7px;
+    margin: 2px;
+    background-color: rgb(247, 243, 243);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* CSS For Subfooter */
+  
+  #subfooter {
+    background-color: #444;
+    text-align: center;
+  }
+  #subfooter > h2 {
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  
+  #subfooter > div {
+    width: 90%;
+    padding: 0 5%;
+  }
+  #subfooter > hr {
+    background-color: #fed250;
+    border: none;
+    width: 50px;
+    border: none;
+    height: 3px;
+    margin-top: -23px;
+  }
+  
+  .dot {
+    height: 2px;
+    width: 2px;
+    margin: 0 5px;
+  }
+  
+  #tail {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  #tail > p > img {
+    width: 20px;
+  }
+  .socialmedia > img {
+    width: 25px;
+  }
+  
+  /* CSS for NavBar */
+  
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+  }
+  
+  #iconMenu {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #iconMenu > img {
+    width: 140px;
+  }
+  
+  #navMenu {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+  #navMenu > a {
+    text-decoration: none;
+    color: rgba(68, 68, 68, 0.687);
+    font-weight: bolder;
+    padding: 14px 10px;
+    margin-bottom: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #navMenu > a:hover {
+    background-color: #fed250b9;
+    padding: 14px 10px;
+    overflow: hidden;
+    transition: 2ms;
+    border-radius: 5px;
+  }
+  #navMenu > :first-child{
+    padding: 0 10px;
+    margin-bottom: -4px;
+  }
+  #navMenu > :first-child:hover{
+    background-color: #fed250;
+    padding: 2px 10px;
+    margin-bottom: -4px;
+  }
+  
+  
+  #navMenu > a > img {
+    width: 65px;
+  }
+  
+  #loginSignup {
+    width: 12%;
+  }
+  
+  #SelectCity {
+    width: 10%;
+    height: 40px;
+  }
+  #SelectCity > button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 155px;
+    padding: 8px 10px;
+    border: 3px solid #fed250;
+    border-radius: 5px;
+    background-color: white;
+    color: #373737;
+    
+    
+  }
+  #SelectCity :hover {
+    background-color: #edb81880;
+  }
+  
+  #SelectCity > button :first-child {
+    width: 20px;
+  }
+  #loginSignup > :first-child {
+    border: none;
+    padding: 10px 22px;
+    background-color: white;
+    color: #444;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  #loginSignup > :first-child:hover {
+    background-color: rgb(202, 198, 198);
+    border-radius: 5px;
+  }
+  #loginSignup > :last-child {
+    padding: 10px 20px;
+    background-color: #fed250;
+    border-radius: 8px;
+    border: none;
+    color: #444;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  /* Contact bar */
+  
+  .contact-bar{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* position: relative; */
+    height: 30px;
+    font-size: small;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.151);
+    z-index: 1000;
+    position: fixed;
+  }
+  
+  /* .contact-bar{
+      display: flex;
+      width: 100%;
+      align-items: center;
+  
+  }
+  
+  .contact-bar>div{
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+  } */
+  
+  /* CSS for main body */
+  
+  .top-part {
+    background-image: url(../Landing-Page/images/top-image.jpg);
+    position: relative;
+    background-position: 60%;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .select-ride {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  #pick-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 20%;
+    height: 53%;
+    justify-content: space-around;
+    padding: 2%;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #pick-form > h2 {
+    margin-top: -10px;
+  }
+  #pick-form > div > input {
+    width: 45%;
+    height: 30px;
+    border: 0.5px solid rgb(234, 231, 231);
+    border-radius: 5px;
+  }
+  #pick-form > input {
+    height: 38px;
+    width: 95%;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fed250;
+  }
+  .tpFoot {
+    text-align: right;
+    background-color: #37373770;
+    padding: 1px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .tpFoot > p > span {
+    color: #edb818;
+  }
+  
+  .bikeAndLifeInsurence {
+    display: flex;
+    justify-content: center;
+  }
+  .bikeAndLifeInsurence > div {
+    display: flex;
+    margin: 5px 20px;
+    align-items: center;
+  }
+  .bikeAndLifeInsurence > div > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .bikeAndLifeInsurence > div > p {
+    color: #5b5a5a;
+    font-size: larger;
+  }
+  
+  .middlePart {
+    background-image: url(../Landing-Page/images/RBX_carousel_off.jpg);
+    position: relative;
+    background-position: 60%;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .offer {
+    width: 100%;
+    height: 90vh;
+  }
+  .offer > button {
+    margin-top: 80vh;
+    margin-left: 500px;
+    padding: 10px 25px;
+    border-radius: 80px;
+    border: none;
+    background-color: #fed250;
+  }
+  
+  .bodyHeadings {
+    text-align: center;
+    color: #444;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.657);
+  }
+  .bodyHeadings > hr {
+    width: 40px;
+    margin-top: -20px;
+    border: none;
+    height: 3px;
+    background-color: #fcd351;
+  }
+  
+  /* Slide Show  Start */
+  
+  /* * {box-sizing: border-box;}
+  
+  .mySlides {display: none;}
+  img {vertical-align: middle;} */
+  body {
+    font-family: Verdana, sans-serif;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slideshow-container > div {
+    width: 100%;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(247, 243, 243);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px;
+    }
+  }
+  
+  /* /Slide Show 2 */
+  
+  .slideshow-container1 {
+    max-width: 1000px;
+    height: 100px;
+    position: relative;
+    margin: 0 0 100px 0;
+  }
+  
+  .slideshow-container1 > div {
+    width: 80%;
+    margin-left: 660px;
+  }
+  .fade1 {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  .mySlidesContant {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 50px;
+    width: 30%;
+    
+  }
+  .mySlidesContant h1{
+    margin: 360px 0 0 100px;
+  
+  
+  }
+  .mySlidesContant p{
+    margin: 20px 0 0 100px;
+  }
+  

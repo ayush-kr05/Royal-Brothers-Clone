@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City PopUp</title>
-    <link rel="stylesheet" href="popupCity.css">
+    <title>Bike rentals in City | Bikes for rent in City |</title>
+    <link rel="icon" type="image/x-icon" href="../pages/images/Rblogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
     <script src="https://kit.fontawesome.com/337fe3a5de.js" crossorigin="anonymous"></script>
+  
+   
+
 </head>
 <body>
 
-   
 
-
-
-
-
-
-<!-- NavBar +contact-bar     -->
+    <section class="FindCityPop">
+        <div class="cityBody">
+            <div class="CityConatainer">
+                <div class="popUpTittle">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png" alt=""><span>|</span><h3>Bike Rentals</h3></div>
+                <div class="SearchCity">
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search or Type to Select your city"><span>Clear</span>
+                </div>
+    
+                <div class="CityGridBox" id="CityGridBox">
+                
+                    <!-- <div class="cityNames"><img src="https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/039/original/Agra_new.jpg" alt=""><p>Banglore</p></div> -->
+    
+                    <!-- <div class="cityNames"><img src="" alt=""><p>Banglore</p></div> -->
+                   
+    
+                </div>
+            </div>
+        </div>  
+    </section>
 
 
     <div class="contact-bar">
-        <i class="fa-solid fa-phone"></i><p>+917795687594 / +919019595595</p><span>|</span><a href="">Chat Now</a>
-        </div>
+    <i class="fa-solid fa-phone"></i><p>+917795687594 / +919019595595</p><span>|</span><a href="">Chat Now</a>
+    </div>
+
+
+ <!--HTML for Royal Brother's NavBar -->  
+
     <nav>
         <div id="iconMenu">
              <div><i class="fa-solid fa-bars"></i></div>
@@ -37,6 +59,7 @@
        </div>
        <div id="SelectCity">
             <button>
+                <!-- <i class="fa-solid fa-location-dot"></i> -->
                 <img src="https://www.pikpng.com/pngl/b/48-484762_location-png.png" alt="">
                 <span>City Name</span>
                 <i class="fa-solid fa-chevron-down"></i>
@@ -48,50 +71,311 @@
         <button>Sign up</button>
        </div>
 
-    </nav> 
+    </nav>
+
+<!--End HTML for Royal Brother's NavBar --> 
 
 
+<div class="top-part">
+    <div class="select-ride">
+        <form id="pick-form" >
+            <h2>Search your next ride</h2>
+            <label>Pickup</label>
+            <div>
+                
+              <input type="text" placeholder="Date"
+              onfocus="(this.type='date')">
+              <input type="text" placeholder="Time"
+              onfocus="(this.type='date')">
+            </div>
+            <label>Dropoff</label>
+            <div>
+              <input type="text" placeholder="Date"
+              onfocus="(this.type='date')">
+              <input type="text" placeholder="Time"
+              onfocus="(this.type='date')">
+            </div>
 
-    <div class="sliding-menu">
-        <button id="navClose"><img src="https://simg.nicepng.com/png/small/242-2425648_close-remove-delete-exit-cross-cancel-trash-comments.png" alt=""></button>
-        <a href="">Tariff</a>
-        <a href="">Store</a>
-        <a href="">Offers</a>
-        <a href="">Ride And Train</a>
-        <a href="">Blog</a>
-        <a href="">Indian Bike Routes</a>
-        <a href="">Inter-City Travel</a>
-        <a href="">About Us</a>
-        <a href="">Bike Tour</a>
-        <button id="navSliderMenu">Menu<i class="fa-solid fa-angle-down"></i></button>
-        <button id="navPartnerwithUs">Partner With Us<i class="fa-solid fa-angle-down"></i></button>
-        <a href="">Reach Us</a>
+            <input type="submit">
+            
+        </form>
+    </div>
+    <div class="tpFoot"><p><span>SAVE</span> UPTO <span>30%</span> WITH ROYAL BROTHERS</p></div>
+</div>
+
+
+<div class="bikeAndLifeInsurence">
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_sanitized-a37325c03fb50fd9b2783d574ba67c40cb7b8a90d5951a85f72095904943e1d6.png" alt=""><p>Sanitized Vehicles</p></div>
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_insurance-84ee18a118bee4cfc4f774e0dbdb5d24431af458eb583d5d1c5822801e388764.png" alt=""><p>Vehicle Insurance</p></div>
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_assistance-ec66ebeeb0ebb01468fc1729165040e172820de83d5037cf47a73f4e19177d68.png" alt=""><p>24/7 Roadside Assistance</p></div>
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_maintainence-4ac25e7eb9ad6f8b78ec52640a7310d8083a21823e1fb54ca9872076c2bc5f34.png" alt=""><p>Bike Maintenance</p></div>
+</div>
+
+<div class="middlePart">
+    <a href="">
+    <div class="offer">
+        <button>Subscribe Now <i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+    </a>
+</div>
+
+<div class="bodyHeadings"><h2>OUR FLEET</h2><hr></div>
+
+
+<div class="FleetContainer">
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+</div>
+
+<div class="bodyHeadings"><h2>WE BELIEVE IN QUALITY</h2><hr></div>
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+     <div class="mySlidesContant">
+        <h1>Ready to serve you in 40+ cities! </h1>
+       <p>Think of a city & we are mostly there. The next time you plan on exploring a city, know that your means of transport is sorted with Royal Brothers. #BhaiHaiNa
+        </p></div>
+      <img src="../Landing-Page/images/slide3.jpg" style="width:100%;height: 100vh;">
+
+      
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="mySlidesContant">
+            <h1>WE BELIEVE IN QUALITY
+                We’re socially celebrated</h1>
+           <p> Our customer centric approach has got us amazing reviews. Be it any platform, you will see many users recommending our service.</p></div>
+      
+      <img src="../Landing-Page/images/slide1.jpg" style="width:100%;height: 100vh;">
+     
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="mySlidesContant">
+            <h1>Bikes maintained so good,you will feel it is brand-new</h1>
+           <p> We obsess on giving you the best possible experience. This is not only with well serviced bikes but also with a 24/7 support team available just a call away.</p></div>
+   
+      <img src="../Landing-Page/images/slide2.jpg" style="width:100%;height: 100vh;">
+
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
     </div>
 
-    <!-- Citypopup -->
-
-    <div class="cityBody">
-        <div class="CityConatainer">
-            <div class="popUpTittle">
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png" alt=""><span>|</span><h3>Bike Rentals</h3></div>
-            <div class="SearchCity">
-                <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search or Type to Select your city"><span>Clear</span>
-            </div>
-
-            <div class="CityGridBox" id="CityGridBox">
-            
-                <!-- <div class="cityNames"><img src="https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/039/original/Agra_new.jpg" alt=""><p>Banglore</p></div> -->
-
-                <!-- <div class="cityNames"><img src="" alt=""><p>Banglore</p></div> -->
-               
-
-            </div>
-        </div>
-    </div>  
+   
     
-    <div class="ddd"></div>
+
+<div class="bodyHeadings"><h2>FEATURED IN</h2><hr></div>
+
+
+<div class="slideshow-container1">
+
+    <div class="mySlides1 fade1">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news2-b2db5fe5ecf6968d4e47cba7876d3ae8a959a5de65901b5a6292032987a38bdd.png" style="width:25%">
+    </div>
+    
+    <div class="mySlides1 fade1">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/money_control-0301bddd4ac901172098f7d0b590e8dbed35e7fa1064d2ced799f9cbc9185d66.png" style="width:25%">
+    </div>
+    
+    <div class="mySlides1 fade1">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/the_better_india-09cca403fbe2fe19974cb1701aaa87fce8e587f32a18bc477ebf28f05e1c1788.png" style="width:25%">
+    </div>
+    <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/inc_42-59ce79f32655b91f34e9ed4e5d53175f446ea263b57ffc85fd3572a1a4a1aade.jpg" style="width:25%">
+      </div>
+      <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/the_indian_express-e2581d704a7b572ef2d66812e5a264c6ab753e109a200c4da8e249b82e3c9f52.jpg" style="width:25%">
+      </div>
+      <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news3-2eb9e0398a565284ca3c41d685e32de985b43ce00541889f59541ee91cb28e61.png" style="width:25%">
+      </div> 
+      <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news1-0a213d6dc03c6d68b278a11f210efe7cd727bf2f1fc34982b90b34d2d1c875da.png" style="width:25%">
+      </div>   
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>  
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+
+ <!--HTML for Royal Brother's MainBody -->  
+
+
+ 
+
+    
+ <!--HTML for Royal Brother's Footer -->
+
+
+    <footer id="home-Footer">
+       <div id="main-footer">
+            <div>
+                <h5>ROYAL BROTHERS</h5>
+                <hr>
+                <div>
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-mail-f7a800f328eab451231c558115ad0067bdd6c5ba04b7acd19f22ae4036e702d1.png" alt="phone icon">
+                <p>support@royalbrothers.com</p>
+                </div>
+                <div>
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-phone-d7daea12563d63fb4bd1cbb2fa0a824d19501def56934aff125e23343912895e.png" alt="phone icon">
+                    <p>+917795687594/+919019595595</p>
+                </div> 
+            </div>
+            <div>
+                <h5>COMPANY</h5>
+                <hr>
+                <a href="">About Us</a>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+                <a href="">Contact Us</a>
+
+            </div>
+            <div>
+                <h5>POLICIES</h5>
+                <hr>
+                <a>Privacy Policy</a>
+                <a>Terms & Conditions</a>
+            </div>
+            <div>
+                <h5>QUICK LINKS</h5>
+                <hr>
+                <a href="">Tariff</a>
+                <a href="">Own a franchise</a>
+                <a href="">Earn with us</a>
+                <a href="">Indian bike routes</a>
+            </div>
+      
+            <div>
+                <h5>FOLLOW US</h5>
+                <hr>
+                <div class="socialmedia">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Insta-e068316ffc568b3c0162ef129542c4ec473fedb2317cc8132168a07a0616b475.png" alt="insta logo">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Facebook-ad24f92a1479ca4c5b308092f11f91d3ad2189d505ba2a737f376943a89b721b.png" alt="FB Logo">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Linkedin-685bfa4464dc2263601740aad98014e02801299c7f2104be70458ac13d061fa1.png" alt="Linkedn Logo">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Youtube-35dbc9202b8e7b71d09c782934215b9f6a78a1b3b11d190b5ad275c004484295.png" alt="">
+                </div>    
+            </div>
+            <div class="followUs">
+                <h5>DOWNLOAD OUR APP</h5>
+                <hr>
+                <div>
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png" alt="App Store">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/play_store-057f9061b4cd0fd4953a485569c15e63fdf8d89b0bcc025c04cfb34d9e8cd571.png" alt="Play Store">
+                </div>    
+            </div>
+           
+      
+        
+      </div>   <!--  end of main footer -->
+
+      <div id="subfooter">
+        <h2>Bike Rentals in Agra</h2>
+        <h1>OUR PRESENCE</h1>
+        <hr>
+        <div>
+            <p>
+                Bikes for rent in Agra <span class="dotFoot"></span>  Bikes for rent in Ahmedabad <span class="dotFoot"></span>  Bikes for rent in Alleppey<span class="dotFoot"></span>    Bikes for rent in Amritsar <span class="dotFoot"></span>   Bikes for rent in Andaman Nicobar <span class="dotFoot"></span>  Bikes for rent in Bangalore <span class="dotFoot"></span>  Bikes for rent in Bangalore Airport <span class="dotFoot"></span>   Bikes for rent in Bangkok <span class="dotFoot"></span>  Bikes for rent in Belagavi <span class="dotFoot"></span>   Bikes for rent in Bhubaneswar <span class="dotFoot"></span>  Bikes for rent in Bhuj <span class="dotFoot"></span>  Bikes for rent in Calicut <span class="dotFoot"></span>  Bikes for rent in Chandigarh <span class="dotFoot"></span>  Bikes for rent in Chennai <span class="dotFoot"></span>  Bikes for rent in Chikmagalur <span class="dotFoot"></span>   Bikes for rent in Cochin <span class="dotFoot"></span>  Bikes for rent in Coimbatore <span class="dotFoot"></span>  Bikes for rent in Coorg - Kushalnagar <span class="dotFoot"></span>  Bikes for rent in Coorg - Madikeri <span class="dotFoot"></span>  Bikes for rent in Davanagere <span class="dotFoot"></span>  Bikes for rent in Delhi <span class="dotFoot"></span>  Bikes for rent in Dharamshala <span class="dotFoot"></span>  Bikes for rent in Ganapati pule <span class="dotFoot"></span>  Bikes for rent in Gandhinagar <span class="dotFoot"></span>  Bikes for rent in Goa <span class="dotFoot"></span>  Bikes for rent in Guntur <span class="dotFoot"></span>  Bikes for rent in Gurugram <span class="dotFoot"></span>  Bikes for rent in Guwahati <span class="dotFoot"></span>  Bikes for rent in Hubli-Dharwad <span class="dotFoot"></span>   Bikes for rent in Hyderabad <span class="dotFoot"></span>  Bikes for rent in Indore <span class="dotFoot"></span>  Bikes for rent in Jaipur <span class="dotFoot"></span>  Bikes for rent in Jaisalmer <span class="dotFoot"></span>  Bikes for rent in Jodhpur <span class="dotFoot"></span>  Bikes for rent in Kolkata <span class="dotFoot"></span>  Bikes for rent in Konark <span class="dotFoot"></span>  Bikes for rent in Lucknow <span class="dotFoot"></span>  Bikes for rent in Manali <span class="dotFoot"></span>  Bikes for rent in Mangalore <span class="dotFoot"></span>  Bikes for rent in Mohali <span class="dotFoot"></span>  Bikes for rent in Mount Abu <span class="dotFoot"></span>  Bikes for rent in Mumbai <span class="dotFoot"></span>  Bikes for rent in Mysore <span class="dotFoot"></span>  Bikes for rent in Nashik <span class="dotFoot"></span>  Bikes for rent in Ooty <span class="dotFoot"></span>  Bikes for rent in Pondicherry <span class="dotFoot"></span>  Bikes for rent in Pune <span class="dotFoot"></span>  Bikes for rent in Puri <span class="dotFoot"></span>  Bikes for rent in Ranchi <span class="dotFoot"></span>  Bikes for rent in Rishikesh <span class="dotFoot"></span>  Bikes for rent in Sakleshpur <span class="dotFoot"></span>  Bikes for rent in Siliguri <span class="dotFoot"></span>  Bikes for rent in Srinagar <span class="dotFoot"></span>  Bikes for rent in Surat <span class="dotFoot"></span>  Bikes for rent in Tirupati <span class="dotFoot"></span>  Bikes for rent in Trivandrum <span class="dotFoot"></span>  Bikes for rent in Udaipur <span class="dotFoot"></span>  Bikes for rent in Udupi - manipal <span class="dotFoot"></span>   Bikes for rent in Vijayawada <span class="dotFoot"></span> Bikes for rent in Vizag <span class="dotFoot"></span> Bikes for rent in Wayanad
+            </p>
+        </div>
+       </div> <!-- End subfooter -->
+       <div id="tail"><p> Made with <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png" alt=""> by team Royal Brothers </p></div>
+    </footer>
+    
+
+ <!-- HTML of Footer Completed -->
+       
+  
+
     
 </body>
+</html>
+
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+    let slideIndex1 = 0;
+    showSlides1();
+    
+    function showSlides1() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides1");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex1++;
+      if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex1-1].style.display = "block";  
+      dots[slideIndex1-1].className += " active";
+      setTimeout(showSlides1, 1000); // Change image every 2 seconds
+    }
+    </script>
+
 <script>
 
     var CityDetails =[
@@ -340,91 +624,11 @@
         }
 
         function StoreCity(val) {
+          localStorage.setItem("presentCity",val);
         var sitname = "../pages/" +val + ".html";
         window.open(`${sitname}`, "_self");
       }
 
 
 </script>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-displayProducts(mensData);
-
-function displayProducts(ProductInfo){
-     ProductInfo.map(function(data){
-        var ProductBox=document.createElement("div");
-        ProductBox.setAttribute('id',data.id);
-
-        var pImg= document.createElement("img");
-        pImg.setAttribute('src',data.image_url);
-
-
-        var pName= document.createElement("h5");
-        pName.innerText=data.name;
-
-        var priceBox= document.createElement("div");
-        priceBox.setAttribute('class','price');
-
-        var price= document.createElement("p");
-        price.innerText="₹"+data.price;
-        var strikeprice= document.createElement("p");
-        strikeprice.innerText="₹"+data.strikedoffprice;
-        priceBox.append(price,strikeprice);
-        
-        var cartBtn=document.createElement("button");
-        cartBtn.innerText="Add To Cart";
-
-        cartBtn.addEventListener("click",function(){
-          AddToCart(data.id);
-        });
-
-        //Function for increase cart count
-        
-
-
-        cartBtn.setAttribute('id','addToCart')
-
-        ProductBox.append(pImg,pName,priceBox,cartBtn);
-
-
-        document.getElementById("PBox").append(ProductBox);
-
-      })
-}
-
-function AddToCart(id){
-    // console.log(id);
-    var productsInCart=JSON.parse(localStorage.getItem("CartItems")) || [];
-
-      var product= mensData.filter(function(elm){
-        return elm.id==id;
-      })
-    // console.log(product);
-      var productExist= productsInCart.filter(function(elm){
-        return elm.id==id;
-      });
-      if(productExist.length==0){
-        productsInCart.push(product[0]);
-        localStorage.setItem("CartItems",JSON.stringify(productsInCart));
-      }else{
-        alert("Product Already in the Cart");
-      }
-
-
-}
-
- -->
+ 
