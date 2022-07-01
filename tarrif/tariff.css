@@ -1,0 +1,80 @@
+* {
+    font-family: Muli, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    width: 350px;
+    margin-bottom: 40px;
+    /* padding: 15px; */
+    padding: 15px;
+}
+
+.day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+    font-size: 12.96px;
+    color: #000000DE;
+
+}
+
+.font-font {
+    font-size: 9.6px;
+    color: #000000DE;
+    margin-top: 10px;
+
+}
+
+.book-button {
+    padding: 10px;
+    width: 100%;
+    background-color: #fed250;
+    margin-top: 50px;
+    border: 0px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 16.56px;
+    margin-top: 15px;
+}
+
+.bike-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tarrif-page-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: auto;
+    margin: auto;
+    width: 70%;
+}

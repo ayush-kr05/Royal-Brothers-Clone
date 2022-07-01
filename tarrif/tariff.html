@@ -7,713 +7,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent Bike in Ahmedabad</title>
     <style>
-        * {
-            font-family: Muli, sans-serif;
-            margin: 0px;
-            padding: 0px;
-        }
+        
 
-        .main-container {
-            border: 1px solid rgba(128, 128, 128, 0.274);
-            width: 350px;
-            margin-bottom: 40px;
-            /* padding: 15px; */
-            padding: 15px;
-        }
-
-        .day-nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            border: 1px solid rgba(128, 128, 128, 0.274);
-
-        }
-
-        .booking {
-            display: flex;
-            justify-content: space-between;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin: 5px;
-            font-size: 12.96px;
-            color: #000000DE;
-
-        }
-
-        .font-font {
-            font-size: 9.6px;
-            color: #000000DE;
-            margin-top: 10px;
-
-        }
-
-        .book-button {
-            padding: 10px;
-            width: 100%;
-            background-color: #fed250;
-            margin-top: 50px;
-            border: 0px;
-        }
-
-        .margin-top {
-            margin-top: 20px;
-        }
-
-        .title {
+        .center{
             text-align: center;
-            font-size: 16.56px;
-            margin-top: 15px;
         }
-
-        .bike-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 15px;
-            margin-top: 15px;
-
-
-        }
-        h1{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        .tarrif-page-container{
+        #container{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            gap: auto;
-            margin: auto;
-        
-            width: 70%;
+            padding: 50px;
         }
+
+         .box{
+            border: 2px solid black;
+            padding: 20px;
+            width: 460px;
+         }
+         h4{
+            margin-top: -15px;
+         }
+         .box img{
+           display: block;
+           margin: auto;
+         }
+        #availbilty_p{
+            background-color: yellow;
+            height: 38px;
+        }
+        .details div{
+            display: flex;
+            justify-content: space-between;
+            /* height: 40px; */
+        }
+        .details p{
+            margin-top: -20px;
+            font-size: 20px;
+        }
+        .excess_chrges{
+            display: flex;
+            flex-direction: column;
+        }
+        .day_n_price div{
+             display: flex;
+             /* flex-direction: column; */
+        }
+
     </style>
 </head>
 
 <body>
-
     <h1>Bike rental tariffs in Ahmedabad</h1>
-  <div class="tarrif-page-container">
-    <div class="main-container">
-        <h3 class="title">
-            Aprilia SR 150 (ABS)
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/030/medium/Aprilia-SR-150__...png?1504092295"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
+  
+  <div id="container" class="center">
+    <!-- <div id="box" class="box"> -->
+        <!-- <h3 id="bike_name"></h3> -->
+        <img id="bike_img" src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/020/medium/FZ_Version_1.png?1504100292" alt="">
+         <p id="availbilty_p"></p>
+         <div class="details">
+            <h4 id="row1-availblity"></h4>
+            <div id="row1_day_n_price_div" class="day_n_price">
+                <p id="row1_day_sts"></p>
+                <p id="row1_price"></p>
+            </div>
+            <h4 id="row2-availblity"></h4>
+            <div id="row2_day_n_price_div" class="day_n_price">
+                <p id="row2_day_sts"></p>
+                <p id="row2_price"></p>
             </div>
 
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
+            <h4 id="row3-heading"></h4>
+            <div id="row3_day_n_price_div" class="day_n_price">
+                <div id="excess_chrges_keys" class="excess_chrges">
+                    <p id="excess_km_key"></p>
+                    <p id="km_limit_key"></p>  
                 </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
+                <div id="excess_chrges_value" class="excess_chrges">
+                    <p id="excess_km_price"></p>
+                    <p id="km_limit_value"></p>
+                </div>    
+            <!-- </div> -->
+         </div>
+      <button id="Book_btn"></button>
+  </div>   
+    <!-- <div id="box" class="box">
+        <h3 id="bike_name"></h3>
+        <img id="bike_img" src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/020/medium/FZ_Version_1.png?1504100292" alt="">
+         <p id="availbilty_p"></p>
+         <div class="details">
+            <h4 id="row1-availblity"></h4>
+            <div id="row1_day_n_price_div" class="day_n_price">
+                <p id="row1_day_sts"></p>
+                <p id="row1_price"></p>
+            </div>
+            <h4 id="row2-availblity"></h4>
+            <div id="row2_day_n_price_div" class="day_n_price">
+                <p id="row2_day_sts"></p>
+                <p id="row2_price"></p>
             </div>
 
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
+            <h4 id="row3-heading"></h4>
+            <div id="row3_day_n_price_div" class="day_n_price">
+                <div id="excess_chrges_keys" class="excess_chrges">
+                    <p id="excess_km_key"></p>
+                    <p id="km_limit_key"></p>  
                 </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
+                <div id="excess_chrges_value" class="excess_chrges">
+                    <p id="excess_km_price"></p>
+                    <p id="km_limit_value"></p>
+                </div>    
             </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-
-
-    <div class="main-container">
-        <h3 class="title">
-            Aprilia SR 150 (ABS)
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/030/medium/Aprilia-SR-150__...png?1504092295"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-Honda Dio        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-Honda Activa 4G        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/121/medium/Activa_48-min_2.png?1592300804"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-            Honda Activa 5G)
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-            TVS Ntorq 125
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/257/medium/ntorq2.png?1571407789"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-            Bajaj Pulsar 150        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/016/medium/Bajaj_Pulsar-min_2.png?1519738545"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-            Yamaha FZ
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/020/medium/FZ_Version_1.png?1504100292"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-
-    <div class="main-container">
-        <h3 class="title">
-            Hero Glamour
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/265/medium/Glamour_125.png?1571327418"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-    <div class="main-container">
-        <h3 class="title">
-            KTM Duke 200 (ABS)
-        </h3>
-        <img class="bike-image"
-            src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/246/medium/Duke_200_ABS.png?1559098797"
-            alt="img">
-
-        <div class="day-nav">
-            <p>HOURLY</p>
-            <p>7 DAYS</p>
-            <p>15 DAYS</p>
-            <p>30 DAYS</p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <p class="margin-top">Mon-Thu</p>
-                    <p class="font-font">(Min 10hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (0- 24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24 hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Fri-Sun</p>
-                    <p class="font-font">(Min 24hrs booking)</p>
-                </div>
-                <div class="booking">
-                    <p>Booking Time (>24hrs) </p>
-                    <p>₹ 22/hr</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="margin-top">Extras</p>
-
-                </div>
-                <div class="booking">
-                    <p>Km limit</p>
-                    <p>5.0/hr</p>
-                </div>
-                <div class="booking">
-                    <p>Excess km charges</p>
-                    <p>₹ 4.0/km</p>
-                </div>
-            </div>
-
-        </div>
-        <button class="book-button">BOOK NOW</button>
-
-    </div>
-  </div>
-
-
-
+         </div>
+      <button id="Book_btn"></button>
+  </div>    -->
+</div>
+
+<script src="tariff.js"></script>
 </body>
-
 </html>
 
 
 
-<script>
-
+<!-- <script>
 // store object
 
 // let itemDetails=[
@@ -812,7 +226,6 @@ Honda Activa 4G        </h3>
 
 
 // })
-
-</script>
+</script> -->
 
 
