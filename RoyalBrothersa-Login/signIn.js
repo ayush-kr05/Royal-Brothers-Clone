@@ -18,7 +18,10 @@ function getDetails(event){
 
     if(isExsist==true){
         alert("Welcome To Masai");
+        localStorage.setItem("login","true");
+        window.open("../pages/Ahmedabad.html", "_self");
     }else{
         alert("Wrong Credentials");
+        localStorage.setItem("login","tr");
     }
 }
