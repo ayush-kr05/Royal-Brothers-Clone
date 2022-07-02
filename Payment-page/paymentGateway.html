@@ -27,7 +27,7 @@
             display: flex;
             flex-direction: column;
             background-color: #fff;
-            width: 35%;
+            width: 50%;
             padding: 15px;
         }
 
@@ -35,13 +35,13 @@
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #b1acac;
-            font-size: 15px;
+            font-size: 25px;
             background-color: #e5e1e1;
         }
 
         label {
             margin: 20px 0 5px 0;
-            font-size: 20px;
+            font-size: 30px;
             background-color: #fff;
         }
 
@@ -105,7 +105,7 @@
         }
     }
     if(localStorage.getItem("payment-method")=="Bike-payment"){
-    document.getElementById("makePay").value = `Pay ${localStorage.getItem("bike_payment_price")}`;
+    document.getElementById("makePay").value = `Pay -  Rs.${localStorage.getItem("bike_payment_price")}`;
     }else{
         document.getElementById("makePay").value = `Pay ${localStorage.getItem("product_total")}`;
     }

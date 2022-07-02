@@ -1,6 +1,7 @@
 body{
     align-items: center;
-    background-color: rgba(180, 226, 243, 0.424);
+    /* background-color: rgba(180, 226, 243, 0.424) */
+    background-color: rgb(255, 255, 144);
 }
 div{
     display: flex;

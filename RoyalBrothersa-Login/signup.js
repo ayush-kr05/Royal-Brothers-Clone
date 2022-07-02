@@ -13,8 +13,6 @@ function submitDetails(){
   data.push(obj);
     
     localStorage.setItem("userDetails",JSON.stringify(data));
-    // if(data.length>0){
-    //     alert("Registered Successfully");
-    //     window.open("signIn.html", "_self");
-    // }
+    alert("SignUp Successfull");
+    window.open("signIn.html", "_self");
 }
