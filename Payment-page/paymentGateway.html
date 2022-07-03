@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="gateway.css">
+
+    <style>
+        h1{
+            margin-bottom: 50px;
+            font-size: 50px;
+            color: rgb(51, 51, 2);
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.508);
+            height: 98vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            width: 50%;
+            padding: 15px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #b1acac;
+            font-size: 25px;
+            background-color: #e5e1e1;
+        }
+
+        label {
+            margin: 20px 0 5px 0;
+            font-size: 30px;
+            background-color: #fff;
+        }
+
+        form p {
+            text-align: center;
+            font-size: small;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        input[type="submit"] {
+            margin: 25px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(51, 51, 2);
+            color: #fff;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <section>
+        <h1>Royal Brothers Payment Gateway</h1>
+        <form>
+            <label for="">Card Number</label>
+            <input type="number" id="cardNum" placeholder="Enter Card 16 Digit Number" required="required" value="">
+
+            <label for="">CVV</label>
+            <input type="number" id="cardCvv" placeholder="Enter CVV Number" required="required" value="">
+
+            <label for="">Expiry Date</label>
+            <input type="text" id="cardDate" placeholder="Enter Expiry Date" required="required" value="">
+
+            <label for="">Name</label>
+            <input type="text" id="cardName" placeholder="Enter Card Holder Name" value="">
+
+            <input type="submit" id="makePay"  value="">
+        </form>
+    </section>
+</body>
+<script>
+
+    document.querySelector("form").addEventListener("submit", makePayment);
+
+    function makePayment(event) {
+        event.preventDefault();
+        var cardNum = document.getElementById("cardNum").value;
+        var cardCvv = document.getElementById("cardCvv").value;
+        var cardDate = document.getElementById("cardDate").value;
+        var cardName = document.getElementById("cardName").value;
+
+        if (cardNum === "123456789" && cardCvv === "123" && cardDate == "12/22") {
+            window.open("otp.html", "_self");
+        } else {
+            alert("Please fill correct data");
+        }
+    }
+    if(localStorage.getItem("payment-method")=="Bike-payment"){
+    document.getElementById("makePay").value = `Pay -  Rs.${localStorage.getItem("bike_payment_price")}`;
+    }else{
+        document.getElementById("makePay").value = `Pay ${localStorage.getItem("product_total")}`;
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" media="screen"
+  href="https://d36g7qg6pk2cm7.cloudfront.net/assets/application-0607d8c64034bc1ccfb13782528064593563fd7d4dc0db3de8b4f1b0ef0463ed.css"
+  onload="if(media!='all')media='all'">
+</head>
+<body>
+  
+  <body class="users access" id="body_id">
+    <div class="full-container" style="height:100vh">
+      <h1 class="center-align heading-riders" style="margin-top:9rem;margin-bottom:1rem;font-size:2rem;">Rent . Ride .
+        Explore</h1>
+      <div class="row panel head-panel">
+        <div class="col s12 l10 m12 offset-l1 margin_top">
+          <div class="col m6 l4 s10 offset-s1 offset-l4 offset-m3 s10 z-depth-2 user-panel">
+            <ul class="tabs center-align login_signup_tabs">
+              <li class="tab col s6 m6 l6">
+                <a href="#login" class="active">
+                  Login</a>
+              </li>
+              <li class="tab col s6 m6 l6">
+                <a href="#sig" class="">Sign up</a>
+              </li>
+            </ul>
+            <div id="signup" class=" col m12 l12 s12 valign">
+              <div class="col l12 m12 s12">
+                <form class="new_user" id="new_user" accept-charset="UTF-8"><input name="utf8" type="hidden"
+                    value="&#10003;"><input type="hidden" name="authenticity_token"> >
+              
+                  <div class="col l12 m12 s12 input-field">
+                    <input required="required" title="Enter only alphabets" type="text" id="user_name">
+                    <label id="label_for_name" for="name">Name as per Aadhaar/Passport</label>
+                  </div>
+                  <input name="recaptcha_token" id="recaptcha_token_signup" class="recaptcha_token">
+                  <div class="col l12 m12 s12 input-field">
+                    <input required="required" title="Enter your email" type="email" name="user[email]" id="user_email">
+                    <label for="user_email">Email</label>
+                  </div>
+                  <div class="col l12 m12 s12 pad0">
+                    <div class="col l3 m3 s3 input-field padright5">
+                      <input id="country_code_signup" class="country_code" name="country_code" type="text" value="+91">
+                      <i class="material-icons right arrow_indicator ">keyboard_arrow_down</i>
+                      <label for="country_code">Mobile</label>
+                    </div>
+                    <div class="col l9 m9 s9 input-field">
+                      <input required="required" pattern="^[0-9]*$" title="Enter number only" type="text"
+                        name="user[phone]" id="user_phone">
+                      <label id="label_for_phone" for="phone">As per Aadhaar</label>
+                    </div>
+                  </div>
+                  <div class="col l12 m12 s12 input-field" style="position:relative">
+                    <input type="password" name="user[password]" id="user_password">
+                    <label for="user_password">Password</label>
+                    <i class="material-icons" id="visibleSignup" onclick="showPass('#user_password', '#visibleSignup')"
+                      style="position:absolute;top:1rem;right:1.3rem;color:#666;cursor:pointer">visibility</i>
+                  </div>
+                  <div class="input-field">
+                    <input type="hidden" name="user[referer_id]" id="user_referer_id">
+                  </div>
+                  <div class="col l12 m12 s12" style="padding-top: 10px;">
+                    <div class="g-recaptcha" data-sitekey="6Lf2CekUAAAAADC06LrERhN55ufLBnsAoXZCT5z5"
+                      data-callback="verifyCallback"></div>
+                  </div>
+  
+                  <button name="button" class="waves-effect waves-light btn col l6 m6 s12 black-text signupButton"
+                    id="signup-user">Sign Up</button>
+  
+                </form>
+              </div>
+  
+            </div>
+            <div id="login" class="col m12 l12 s12 login valign">
+              <form id="user_login" type="hidden" name="authenticity_token">
+                <div class="col l12 m12 s12 pad0">
+                  <div class="col l3 m4 s4 input-field padright5">
+                    <input id="country_code" class="country_code" value="+91" type="text" name="session[country_code]">
+                    <i class="material-icons right arrow_indicator ">keyboard_arrow_down</i>
+                    <label for="country_code">Phone</label>
+                  </div>
+                  <input id="recaptcha_token" class="recaptcha_token" type="text" name="session[recaptcha_token]">
+                  <div class="col l9 m8 s8 input-field">
+                    <input id="phone_no" required="required" pattern="^[0-9]*$" title="Enter number only" type="text"
+                      name="session[phone]">
+                  </div>
+                </div>
+                <div class="col l12 m12 s12 input-field" style="position:relative">
+                  <input required="required" title="Enter your password" type="password" id="session_password">
+                  <label for="session_password">Password</label>
+                  <i class="material-icons" id="visibleLogin" onclick="showPass('#session_password', '#visibleLogin')"
+                    style="position:absolute;top:1rem;right:1.3rem;color:#666;cursor:pointer">visibility</i>
+                </div>
+                <div class="passwordBox col l12 m12 s12">
+                  <p class="passwordBox_first">
+                    <label>
+                      <input type="checkbox">
+                      <span>Remember password?</span>
+                    </label>
+                  </p>
+                  <a class="forgot_pass_inside passwordBox_second" href="#">Forgot password?</a>
+                </div>
+                <button name="button" class="waves-effect waves-light btn col l6 m6 s12 black-text" id="login-user">Login
+                  with Password</button>
+              </form><br>
+              <p class="center-align or-text col l12 m12">OR</p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <script src="js/assets-application-1796ad7348cf61be092ecff4e419bf0255a1027aad82bf12ed6082b081683f93.js"></script>
+    <script>
+      document.querySelector("#login-user").addEventListener("click", () => {
+        console.log("login");
+  
+    let user_phone = document.querySelector("#user_phone").value;
+        let user_password = document.querySelector("#user_password").value;
+  
+        let user_phone1 = localStorage.getItem("user");
+        let user_password1 = localStorage.getItem("user_pass");
+        if (user_phone === user_phone1 && user_password === user_password1) {
+           alert("login sucess");
+          location.href = "https://google.com";
+          // add home address
+        } else {
+          alert("Enter correct details");
+        }
+  
+      
+  
+      }
+    );
+  
+      document.querySelector("#signup-user").addEventListener("click", () => {
+        let user_phone = document.querySelector("#user_phone").value;
+        let user_password = document.querySelector("#user_password").value;
+        console.log(user_password, user_phone)
+        localStorage.setItem("user", user_phone);
+        localStorage.setItem("user_pass", user_password);
+        if (user_phone.length == 10) {
+           alert("signup Sucessfull");
+        } else {
+           alert("Enter correct details");
+        }
+  
+      });
+    </script>
+  </body>
+  
+</body>
+</html>
