@@ -1,4 +1,4 @@
-Netlify Deployes Link - [Royal Brothers](https://elaborate-rabanadas-66d54a.netlify.app)
+Netlify Deployes Link - [Royal Brothers](https://royal-brothers.netlify.app)
 
 ## Problem Statement
 <br>
